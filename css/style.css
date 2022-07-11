@@ -1,0 +1,28 @@
+:root {
+    --orange: #E47B0A;
+    --white: #ffff; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: gray;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.logo img {
+    width: 200px;
+}
