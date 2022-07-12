@@ -1,20 +1,31 @@
 :root {
     --orange: #E47B0A;
     --white: #ffff; 
+    --weakGray: #F9F9FB;
+    --darkGray: #1F2933;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.header {
+    position: absolute;
+    width: 100%;
 }
 
 header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: gray;
 }
 
 nav ul {
@@ -23,6 +34,171 @@ nav ul {
     list-style: none;
 }
 
+nav ul a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+nav ul a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
 .logo img {
     width: 200px;
 }
+
+/* Layout */
+
+.layout {
+    width: 100%;
+    background-image: url(../img/layout.png);
+    background-size: cover;
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.733);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.layout div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.layout h1 {
+    color: var(--white);
+    font-size: 5em;
+    width: 650px;
+    margin: 10px 0;
+}
+
+.layout p {
+    font-size: 1.2em;
+    color: var(--white);
+    margin: 20px 0 50px 0;
+}
+
+.layout .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.layout .buttons a {
+    background-color: var(--orange);
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.layout .buttons a:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    transition: 0.3s;
+}
+/* End Layout */
+
+.valores {
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valores-texto {
+    padding: 30px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--weakGray);
+    text-align: center;
+    
+}
+
+.valores-texto > p {
+    font-size: 0.9em;
+    color: var(--darkGray);
+    margin-top: 20px;
+    border-top: 1px solid var(--darkGray);
+    padding: 20px 0;
+}
+
+.valores-contato {
+    width: 60%;
+    min-width: 350px;
+    margin: 80px 0;
+}
+
+.valores-contato h2 {
+    font-size: 3.5em;
+    text-align: center;
+    color: var(--darkGray);
+}
+
+.valores-contato > p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sobre-home {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-home .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-home .carousel img {
+    width: 550px;
+    border-radius: 8px;
+    box-shadow: 10px -8px 30px 1px rgba(63, 33, 255, 0.233);
+}
+
+.sobre-home .objetivos {
+    width: 40%;
+}
+
+.sobre-home .objetivos > h4 {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 30px 0;
+}
+
+.sobre-home .objetivos h3 {
+    color: var(--darkGray);
+    font-size: 2.2em;
+    margin: 20px 0;
+}
+
+.sobre-home .objetivos > p {
+    color: var(--darkGray);
+    font-size: 1.2em;
+}
+.qtd-projetos {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.qtd-projetos div {
+    text-align: center;
+}
+
+.qtd-projetos div > h4 {
+    color: var(--darkGray);
+    font-size: 4em;
+}
+/********* End Home *********/
+
+
+
