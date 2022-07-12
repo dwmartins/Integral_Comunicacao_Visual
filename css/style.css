@@ -1,21 +1,20 @@
 :root {
-    --orange: #E47B0A;
-    --weakOrange: #ED8F0C;
-    --white: #ffff; 
-    --weakGray: #F9F9FB;
+    --orange: #e47b0a;
+    --weakOrange: #ed8f0c;
+    --white: #ffff;
+    --weakGray: #f9f9fb;
     --weakGray2: #adadad9d;
-    --darkGray: #1F2933;
-
+    --darkGray: #303f4e;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 .header {
     position: absolute;
@@ -121,7 +120,6 @@ nav ul a:hover {
     margin: 0 auto;
     background-color: var(--weakGray);
     text-align: center;
-    
 }
 
 .valores-texto > p {
@@ -270,7 +268,6 @@ nav ul a:hover {
     margin: 30px 0;
 }
 
-
 .contate-nos p {
     color: var(--darkGray);
     font-size: 1em;
@@ -293,8 +290,72 @@ nav ul a:hover {
     transition: 0.3s;
 }
 
+footer {
+    background-color: var(--darkGray);
+    padding: 30px;
+}
 
+.containerFooter {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.nav-bottom {
+    width: 30%;
+    min-width: 300px;
+}
+
+.nav-bottom li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.nav-bottom a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-bottom a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.informaçoes {
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.informaçoes i {
+    margin-right: 10px;
+}
+
+.redes-sociais {
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.redes-sociais i {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.redes-sociais i:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
 /********* End Home *********/
-
-
-
