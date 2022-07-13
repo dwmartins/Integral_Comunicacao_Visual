@@ -30,25 +30,87 @@ header {
     align-items: center;
 }
 
-nav ul {
+nav .nav-list {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-nav ul a {
+nav .nav-list a {
     text-decoration: none;
     font-size: 1.2em;
     color: var(--white);
 }
 
-nav ul a:hover {
+nav .nav-list a:hover {
     color: var(--orange);
     transition: 0.3s;
 }
 
 .logo img {
     width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        background-color: yellow;
+    }
+
+    nav .nav-list {
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        gap: 80px 0;
+        background-color: red;
+        transition: 0.5s;
+        background-color: var(--weakOrange);
+    }
+    
+    .nav-list.openMenu {
+        right: 0%;
+    }
+
+    .header .activeMenu {
+        display: block;
+    }
+
+}
+
+.activeMenu {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 30px;
+    right: 20px;
+    border-radius: 5px;
+    background-color: var(--white);
+    z-index: 999;
+    display: none;
+}
+
+.activeMenu::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    top: 8px;
+    position: absolute;
+    background-color: var(--white);
+}
+
+.activeMenu::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    bottom: 8px;
+    position: absolute;
+    background-color: var(--white);
 }
 
 /* Layout */
@@ -73,7 +135,7 @@ nav ul a:hover {
 .layout h1 {
     color: var(--white);
     font-size: 5em;
-    width: 650px;
+    width: 70%;
     margin: 10px 0;
 }
 
@@ -84,6 +146,7 @@ nav ul a:hover {
 }
 
 .layout .buttons {
+    width: 100%;
     display: flex;
     gap: 20px;
 }
@@ -102,6 +165,20 @@ nav ul a:hover {
     color: var(--orange);
     transition: 0.3s;
 }
+
+@media screen and (max-width: 700px) {
+
+    .layout h1 {
+        font-size: 3.8em;
+    }
+
+    .layout .buttons {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
 /* End Layout */
 
 .valores {
@@ -155,20 +232,28 @@ nav ul a:hover {
 
 .sobre-home .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 40px 0;
     border-bottom: 1px solid var(--weakGray2);
     margin-bottom: 50px;
+    width: 100%;
+}
+
+.sobre-home .carousel {
+    width: 50%;
+    min-width: 380px;
 }
 
 .sobre-home .carousel img {
-    width: 550px;
+    width: 100%;
     border-radius: 8px;
     box-shadow: 10px -8px 30px 1px rgba(63, 33, 255, 0.233);
 }
 
 .sobre-home .objetivos {
-    width: 40%;
+    width: 50%;
+    min-width: 380px;
 }
 
 .sobre-home .objetivos > h4 {
@@ -206,6 +291,7 @@ nav ul a:hover {
 .trabalhos-selecionados {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     margin-bottom: 60px;
 }
@@ -219,7 +305,7 @@ nav ul a:hover {
 .trabalhos-selecionados p {
     font-size: 1em;
     color: var(--darkGray);
-    width: 700px;
+    width: 80%;
     text-align: center;
     margin: 30px 0;
 }
@@ -264,14 +350,14 @@ nav ul a:hover {
     font-size: 3.5em;
     text-align: center;
     color: var(--darkGray);
-    width: 700px;
+    width: 80%;
     margin: 30px 0;
 }
 
 .contate-nos p {
     color: var(--darkGray);
     font-size: 1em;
-    width: 600px;
+    width: 80%;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -292,7 +378,7 @@ nav ul a:hover {
 
 footer {
     background-color: var(--darkGray);
-    padding: 30px;
+    padding: 30px 0 10px 0;
 }
 
 .containerFooter {
@@ -300,6 +386,7 @@ footer {
     max-width: 1200px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px 0;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -358,4 +445,44 @@ footer {
     color: var(--orange);
     transition: 0.3s;
 }
+
+.desenvolvedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--weakGray);
+}
+
+.desenvolvedor p {
+
+    width: 280px;
+    color: var(--white);
+}
+
+.desenvolvedor a {
+    text-decoration: none;
+    color: var(--weakOrange);
+}
+
+.desenvolvedor a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .containerFooter {
+        text-align: center;
+    }
+
+    .redes-sociais {
+        margin-bottom: 20px;
+    }
+}
+
 /********* End Home *********/
