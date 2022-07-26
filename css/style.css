@@ -70,7 +70,7 @@ nav .nav-list a:hover {
         transition: 0.5s;
         background-color: var(--weakOrange);
     }
-    
+
     .nav-list.openMenu {
         right: 0%;
     }
@@ -78,7 +78,6 @@ nav .nav-list a:hover {
     .header .activeMenu {
         display: block;
     }
-
 }
 
 .activeMenu {
@@ -167,7 +166,6 @@ nav .nav-list a:hover {
 }
 
 @media screen and (max-width: 700px) {
-
     .layout h1 {
         font-size: 3.8em;
     }
@@ -177,7 +175,6 @@ nav .nav-list a:hover {
         text-align: center;
     }
 }
-
 
 /* End Layout */
 
@@ -459,7 +456,6 @@ footer {
 }
 
 .desenvolvedor p {
-
     width: 280px;
     color: var(--white);
 }
@@ -486,3 +482,27 @@ footer {
 }
 
 /********* End Home *********/
+
+/* Pagia de contato */
+
+.layout-contato {
+    height: 500px;
+    background-image: url(../img/layout-contato.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.733);
+    display: flex;
+    align-items: center;
+}
+
+.layout-contato > div {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.layout-contato div > h1 {
+    font-size: 5em;
+    color: var(--white);
+    margin-top: 100px;
+}
