@@ -506,3 +506,115 @@ footer {
     color: var(--white);
     margin-top: 100px;
 }
+
+.formulario-contato > div{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.formulario-contato form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato form h2 {
+    color: var(--darkGray);
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.formulario-contato form p  {
+    color: var(--darkGray);
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.flex1, .flex2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex1 > div, .flex2 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid var(--weakGray2);
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    padding: 5px;
+}
+
+.formulario-contato textarea {
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid var(--weakGray2);
+}
+
+.formulario-contato label {
+    color: var(--darkGray);
+    font-weight: bold;
+}
+
+.img-contato {
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: var(--weakGray);
+}
+
+.img-contato img {
+    width: 100%;
+}
+
+.formulario-contato button {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0;
+    background-color: var(--orange);
+    border: #e47b0a;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario-contato button:hover {
+    background-color: var(--weakOrange);
+}
+
+@media screen and (max-width: 1120px) {
+    .formulario-contato > div {
+        flex-direction: column;
+        align-items: center;
+    }       
+
+    .formulario-contato form {
+        width: 90%;
+    }
+
+    .formulario-contato input {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .flex1, .flex2 {
+        flex-direction: column;
+    }
+
+    .formulario-contato input {
+        width: 100%;
+    }
+}
