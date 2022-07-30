@@ -219,6 +219,7 @@ nav .nav-list a:hover {
 .valores-contato > p {
     text-align: center;
     margin: 20px 0;
+    color: var(--darkGray);
 }
 
 .sobre-home {
@@ -307,7 +308,7 @@ nav .nav-list a:hover {
     margin: 30px 0;
 }
 
-.trabalhos {
+.trabalhos-selecionados .trabalhos {
     width: 90%;
     max-width: 1200px;
     display: flex;
@@ -315,7 +316,7 @@ nav .nav-list a:hover {
     flex-wrap: wrap;
 }
 
-.trabalhos img {
+.trabalhos-selecionados .trabalhos img {
     min-width: 300px;
     width: 30%;
 }
@@ -490,24 +491,26 @@ footer {
     background-image: url(../img/layout-contato.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.733);
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.534);
     display: flex;
     align-items: center;
 }
 
 .layout-contato > div {
     width: 90%;
+    height: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
 }
 
 .layout-contato div > h1 {
     font-size: 5em;
     color: var(--white);
-    margin-top: 100px;
 }
 
-.formulario-contato > div{
+.formulario-contato > div {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
@@ -528,20 +531,22 @@ footer {
     margin: 10px 0;
 }
 
-.formulario-contato form p  {
+.formulario-contato form p {
     color: var(--darkGray);
     font-size: 1rem;
     margin: 20px 0;
 }
 
-.flex1, .flex2 {
+.flex1,
+.flex2 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.flex1 > div, .flex2 > div {
+.flex1 > div,
+.flex2 > div {
     display: flex;
     flex-direction: column;
 }
@@ -551,8 +556,9 @@ footer {
     height: 35px;
     border: 1px solid var(--weakGray2);
     border-radius: 5px;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 20px 0;
     padding: 5px;
+    color: var(--darkGray);
 }
 
 .formulario-contato textarea {
@@ -564,17 +570,6 @@ footer {
 .formulario-contato label {
     color: var(--darkGray);
     font-weight: bold;
-}
-
-.img-contato {
-    width: 40%;
-    padding: 40px;
-    border-radius: 15px;
-    background-color: var(--weakGray);
-}
-
-.img-contato img {
-    width: 100%;
 }
 
 .formulario-contato button {
@@ -594,11 +589,35 @@ footer {
     background-color: var(--weakOrange);
 }
 
+.img-contato {
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: var(--weakGray);
+}
+
+.img-contato img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -3px #303f4e;
+}
+
+.img-contato h4 {
+    color: var(--darkGray);
+    margin: 25px 0;
+    font-size: 1.8rem;
+}
+
+.img-contato p {
+    color: var(--darkGray);
+    margin: 8px 0;
+}
+
 @media screen and (max-width: 1120px) {
     .formulario-contato > div {
         flex-direction: column;
         align-items: center;
-    }       
+    }
 
     .formulario-contato form {
         width: 90%;
@@ -607,14 +626,242 @@ footer {
     .formulario-contato input {
         width: 380px;
     }
+
+    .img-contato {
+        width: 80%;
+    }
+
+    .layout-contato div > h1 {
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 980px) {
-    .flex1, .flex2 {
+    .flex1,
+    .flex2 {
         flex-direction: column;
     }
 
     .formulario-contato input {
         width: 100%;
     }
+
+    .img-contato {
+        width: 100%;
+    }
 }
+
+/* ***********End Contato************** */
+
+/* Portfólio */
+
+.layout-portfolio {
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/layout-portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-portfolio > div {
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.layout-portfolio h1 {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.projetos-entregues {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.projetos-entregues h2 {
+    color: var(--darkGray);
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.projetos-entregues p {
+    color: var(--darkGray);
+    font-size: 16px;
+    max-width: 480px;
+}
+
+.projetos-entregues div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.projetos-entregues div img {
+    width: 50%;
+}
+
+@media screen and (max-width: 1120px) {
+    .layout-portfolio h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projetos-entregues div {
+        flex-direction: column;
+    }
+
+    .projetos-entregues div img {
+        width: 100%;
+    }
+}
+
+.layout-servicos {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/layout-servicos.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-servicos div {
+    height: 80%;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.layout-servicos h1 {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.servicos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-bottom: 2px solid var(--weakGray2);
+    padding: 30px 0;
+}
+
+.servicos h2 {
+    font-size: 2.5rem;
+    color: var(--darkGray);
+    margin: 20px 0;
+}
+
+.servicos p {
+    color: var(--darkGray);
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.servicos > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin: 50px 0;
+}
+
+.servicos .item {
+    width: 49%;
+    padding: 20px;
+    border: solid 2px var(--weakGray2);
+}
+
+.servicos .item:hover {
+    border: 2px solid var(--orange);
+    background-color: var(--weakGray);
+}
+
+.servicos .item h3 {
+    color: var(--darkGray);
+    margin: 20px 0;
+    font-size: 1.6rem;
+}
+
+.servicos .item p {
+    color: var(--darkGray);
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.servicos .item a {
+    color: #e47b0a;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.lista-servicos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista-servicos div {
+    width: 24%;
+    min-width: 210px;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista-servicos > div p {
+    color: var(--darkGray);
+    margin: 5px 0;
+    border-bottom: 1px solid var(--weakGray2);
+}
+
+.lista-servicos > div p:hover {
+    color: var(--weakOrange);
+}
+
+.lista-servicos > div span {
+    color: var(--orange);
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+    .layout-servicos h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .servicos > div {
+        flex-direction: column;
+    }
+
+    .servicos .item {
+        width: 100%;
+    }
+
+    .lista-servicos {
+        align-items: center;
+    }
+
+    .lista-servicos div {
+        width: 100%;
+    }
+}
+
+
+/* ********End Portfólio********* */
