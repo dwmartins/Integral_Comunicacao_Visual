@@ -482,6 +482,31 @@ footer {
     }
 }
 
+.btn-to-top {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--orange);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.btn-to-top:hover {
+    background-color: var(--weakOrange);
+}
+
+.btn-to-top i {
+    color: var(--white);
+    font-size: 18px;
+}
+
 /********* End Home *********/
 
 /* Pagia de contato */
