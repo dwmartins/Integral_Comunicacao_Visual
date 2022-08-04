@@ -561,10 +561,16 @@ footer {
     color: var(--darkGray);
 }
 
+.formulario-contato input:valid,
+.formulario-contato textarea:valid {
+    border-color: #078b0d;
+}
+
 .formulario-contato textarea {
     padding: 5px;
     margin: 10px 0;
     border: 1px solid var(--weakGray2);
+    border-radius: 5px;
 }
 
 .formulario-contato label {
