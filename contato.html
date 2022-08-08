@@ -11,6 +11,7 @@
     <meta name="msapplication-navbutton-color" content="#ed8f0c" />
 
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
     
     
@@ -52,7 +53,7 @@
         <!--Formulario de contato-->
         <div>
 
-            <form action="">
+            <form action="" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Envie-nos uma mensagem</h2>
 
                 <p>
@@ -90,7 +91,7 @@
             </form>
 
 
-            <div class="img-contato">
+            <div class="img-contato" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./img/contato.jpg" alt="imagem de contato">
 
                 <h4>Localidade</h4>
@@ -142,6 +143,10 @@
 
     <script src="./js/menuHamburguer.js"></script>
     <script src="./js/btnToTop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
