@@ -11,7 +11,6 @@
     <meta name="msapplication-navbutton-color" content="#ed8f0c" />
 
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
     
     
@@ -50,10 +49,10 @@
     </section>
 
     <section class="formulario-contato">
-        <!--Formulario de contato-->
+        <!--Formulário de contato-->
         <div>
 
-            <form action="" data-aos="fade-right" data-aos-duration="1000">
+            <form action="./php/contato.php" method="POST">
                 <h2>Envie-nos uma mensagem</h2>
 
                 <p>
@@ -63,35 +62,37 @@
                 <div class="flex1">
                     <div>
                         <label>Nome</label>
-                        <input type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome">
                     </div>
 
                     <div>
                         <label>Telefone</label>
-                        <input type="tel" name="telefone" id="telefone" required>
+                        <input type="tel" name="telefone" id="telefone">
                     </div>
                 </div>
 
                 <div class="flex2">
                     <div>
                         <label>E-mail</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email">
                     </div>
 
                     <div>
                         <label>Empresa</label>
-                        <input type="text" name="" id="empresa" required>
+                        <input type="text" name="empresa" id="empresa">
                     </div>
                 </div>
 
                 <label>Mensagem</label>
-                <textarea name="mensagem" cols="30" rows="5" id="mensagem" required></textarea>
+                <textarea name="mensagem" cols="30" rows="5" id="mensagem"></textarea>
+
+                <div id="msgInput"></div>
 
                 <button id="submit" type="submit">Enviar mensagem</button>
             </form>
 
 
-            <div class="img-contato" data-aos="fade-left" data-aos-duration="1000">
+            <div class="img-contato">
                 <img src="./img/contato.jpg" alt="imagem de contato">
 
                 <h4>Localidade</h4>
@@ -143,10 +144,7 @@
 
     <script src="./js/menuHamburguer.js"></script>
     <script src="./js/btnToTop.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="./js/validForm.js"></script>
 </body>
 
 </html>
