@@ -15,6 +15,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
 /* Spinner ao carregar a pagina */
 
 .spinner {
@@ -529,6 +530,11 @@ footer {
     .redes-sociais {
         margin-bottom: 20px;
     }
+}
+
+.btn-scroll {
+    display: none;
+    transition: opacity .5s linear;
 }
 
 .btn-to-top {
