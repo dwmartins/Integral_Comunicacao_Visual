@@ -19,8 +19,8 @@ window.onscroll = function () {
 function btnDisplayNone() {
 
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.querySelector('.btn-scroll').style.display = 'block', opacity = '0';
+        document.querySelector('.btn-scroll').style.display = 'block'
     } else {
         document.querySelector('.btn-scroll').style.display = 'none';
-    }
+    } 
 }

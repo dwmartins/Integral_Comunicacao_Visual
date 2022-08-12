@@ -534,7 +534,6 @@ footer {
 
 .btn-scroll {
     display: none;
-    transition: opacity .5s linear;
 }
 
 .btn-to-top {
