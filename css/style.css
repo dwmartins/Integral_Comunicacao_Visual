@@ -1118,3 +1118,68 @@ footer {
         flex-direction: column-reverse;
     }
 }
+
+.servicos-sobre {
+    width: 100%;
+    margin: 100px 0;
+    border-top: 1px solid var(--weakGray2);
+}
+
+.servicos-sobre h2 {
+    font-size: 3rem;
+    color: var(--darkGray);
+    text-align: center;
+    margin: 30px 0;
+}
+
+.servicos-sobre > div {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.servic_sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.servic_sobre div {
+    width: 170px;
+}
+
+.servic_sobre h3 {
+    color: var(--darkGray);
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.servic_sobre p {
+    color: var(--darkGray);
+    margin: 13px 0;
+    border-bottom: 1px solid var(--weakGray);
+}
+
+.servic_sobre p:hover{
+    color: var(--orange);
+    transition: 500ms;
+}
+
+.servic_sobre i {
+    color: var(--orange);
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 393px) {
+    .servic_sobre {
+        justify-content: center;
+    }
+}
+
+/* *******Fim pagina "Sobre"********** */
