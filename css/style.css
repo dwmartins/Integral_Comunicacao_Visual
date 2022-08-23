@@ -1024,3 +1024,97 @@ footer {
 }
 
 /* ********End Portfólio********* */
+
+
+/*************Página Sobre***************/
+
+.layout-sobre {
+    width: 100%;
+    background-image: url(../img/Layout-sobre.jpg);
+    background-size: cover;
+    box-shadow: inset 0px 0px 100px 500px rgba(0, 0, 0, 0.589);
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-sobre > div {
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.layout-sobre h1 {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.sobre {
+    margin: 50px auto;
+}
+
+.sobre .historia,
+.sobre .abordagem {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .historia > div,
+.sobre .abordagem > div {
+    width: 45%;
+    min-width: 380px;
+}
+
+.sobre .historia img,
+.sobre .abordagem img {
+    width: 45%;
+    min-width: 380px;
+    box-shadow: 10px -8px 30px 1px rgba(63, 33, 255, 0.233);
+}
+
+.sobre .historia h4,
+.sobre .abordagem h4 {
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.sobre .historia h2,
+.sobre .abordagem h2 {
+    margin: 15px 0;
+    color: var(--darkGray);
+}
+
+.sobre .historia p,
+.sobre .abordagem p {
+    color: var(--darkGray);
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 860px) {
+    .sobre .historia > div,
+    .sobre .abordagem > div {
+        width: 90%;
+        min-width: 200px;
+    }
+
+    .sobre .historia img,
+    .sobre .abordagem img {
+        width: 90%;
+        min-width: 200px;
+    }
+
+    .sobre .abordagem {
+        flex-direction: column-reverse;
+    }
+}
